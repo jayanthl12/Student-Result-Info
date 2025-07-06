@@ -6,7 +6,11 @@ def Student_info(No_of_students,No_of_subjects,Total_test_marks):
     for Student in Student_Names(No_of_students):
         Sub ={}
         for _ in range(No_of_subjects):
-            Sub_marks = input(f"Enter the subject and marks with comma of {Student}: ")
+            try:
+                Sub_marks = input(f"Enter the subject and marks with comma of {Student}: ")
+            except ValueError:
+                print("Invalid input! enter the subject and maks with ,")
+                exit()
             if "," not in Sub_marks:
                 print("Invalid input........")
                 return 

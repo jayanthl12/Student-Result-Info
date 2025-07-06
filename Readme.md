@@ -27,9 +27,6 @@ Make sure all files (main.py, student_info.py, student_names.py) are in the same
 
 📝 Input Format
 Step 1:
-Enter the number of students:
-
-
 Enter the No of students: 2
 Step 2:
 Enter the number of subjects:
